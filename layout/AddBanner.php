@@ -1,0 +1,3 @@
+<div class="nn-block">
+    <img class="img-responsive" src="Content/img/banner-camera.jpg" />
+</div>
