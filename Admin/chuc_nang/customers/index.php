@@ -1,3 +1,7 @@
+<?php 
+$link="?thamso=customers_create";
+echo "<a href='$link'>Create</a>";
+?>
 <table border="1">
 <tr>
 <td>MaKH</td>

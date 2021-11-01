@@ -30,6 +30,7 @@ switch($tham_so)
     case "products_create":
         include("chuc_nang/products/create.php");
         break;
+        
     case "suppliers_edit":
         include("chuc_nang/suppliers/edit.php");
         break;
@@ -39,11 +40,15 @@ switch($tham_so)
     case "suppliers_create":
         include("chuc_nang/suppliers/create.php");
         break;
+        
     case "customers_edit":
         include("chuc_nang/customers/edit.php");
         break;
     case "customers_delete":
         include("chuc_nang/customers/delete.php");
+        break;
+    case "customers_create":
+        include("chuc_nang/customers/create.php");
         break;
     default:
 }
