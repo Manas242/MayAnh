@@ -1,0 +1,11 @@
+div.phan_trang a
+{
+    margin-left:2px;
+    margin-right:2px;
+    text-decoration: none;
+    color:blue;
+}
+div.phan_trang a:hover
+{
+    color:red
+}    

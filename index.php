@@ -12,6 +12,7 @@
     <link href="Content/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="Content/css/bootstrap.min.css" rel="stylesheet">
     <link href="Content/css/nn-style.css" rel="stylesheet">
+    <link href="Content/css/custom.css" rel="stylesheet">
 </head>
 
 <body>

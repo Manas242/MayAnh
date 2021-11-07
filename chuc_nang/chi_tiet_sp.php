@@ -31,7 +31,10 @@ echo "<br>";
 if(mysqli_num_rows($km_1)>0)
 {
     echo "Giá bán: ";
+    echo "<del>";
     echo $tv_2['UnitPrice'];
+    echo "$";
+    echo "</del>";
     echo " (tiết kiệm ".$tv_2['Discount']*100;
     echo "%)";
     echo "<br>";
@@ -40,6 +43,7 @@ if(mysqli_num_rows($km_1)>0)
     echo "<n style='color:red;font-weight:bold;'>";
     $giakm=$tv_2['UnitPrice']*(1-$tv_2['Discount']);
     echo $giakm;
+    echo "$";
     echo "</n>";
     echo "<br>";
     echo "<br>";
@@ -48,11 +52,14 @@ else {
     echo "Giá bán: ";
     echo "<n style='color:red;font-weight:bold;'>";
     echo $tv_2['UnitPrice'];
+    echo "$";
     echo "</n>";
     echo "<br>";
     echo "<br>";
 }
 echo "Thương hiệu: ".$th_2['name'];
+echo "<br>";
+echo "<br>";
 echo "<div class='nn-product-box-actions'>";
 echo "<button type='button' title='Add to Cart' class='btn btn-default add-to-cart' data-id='$tv_2[id]'>";
 echo "<span>Add to Cart</span>";

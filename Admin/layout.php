@@ -62,7 +62,7 @@
                             <ul class="nav side-menu">
                                 <?php
                                 $link="?thamso=customers";
-                                echo "<li><a href='$link'><i class='fa fa-usb'></i>customers</a></li>";
+                                echo "<li><a href='$link'><i class='fa fa-usb'></i>Customers</a></li>";
                                 $link="?thamso=orders";
                                 echo "<li><a href='$link'><i class='fa fa-usb'></i>Orders</a></li>";
                                 $link="?thamso=orderdetails";
@@ -70,7 +70,7 @@
                                 $link="?thamso=products";
                                 echo "<li><a href='$link'><i class='fa fa-usb'></i>Products</a></li>";
                                 $link="?thamso=suppliers";
-                                echo "<li><a href='$link'><i class='fa fa-usb'></i>suppliers</a></li>";
+                                echo "<li><a href='$link'><i class='fa fa-usb'></i>Suppliers</a></li>";
                                 ?>
                             </ul>
                         </div>
