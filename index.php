@@ -46,7 +46,7 @@
                     <?php
                     include("layout/Category.php");
                     include("layout/Saleoff.php");
-                    include("layout/BestSeller.php");
+                    //include("layout/BestSeller.php");
                     include("layout/AddBanner.php");
                     ?> 
                 </div><!--end left-sidebar-->

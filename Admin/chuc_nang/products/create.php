@@ -14,7 +14,6 @@ $sql=mysqli_query($conn,"select * from suppliers");
 <form method="POST" class="form" id="fromid">
 <h2>Sản phẩm</h2>
 <label>Username: <input type="text" value="" name="Name"></label><br/>
-<label>UnitBrief: <input type="text" value="" name="UnitBrief"></label><br/>
 <label>UnitPrice: <input type="text" value="" name="UnitPrice"></label><br/>
 <label>Image: <input type="text" value="" name="Image"></label><br/>
 <label>ProductDate: <input type="date" value="" name="ProductDate"></label><br/>
@@ -39,7 +38,6 @@ echo "</select>";
 if (isset($_POST['update'])){
 $id=$_GET['id'];
 $Name=$_POST['Name'];
-$UnitBrief=$_POST['UnitBrief'];
 $UnitPrice=$_POST['UnitPrice'];
 $Image=$_POST['Image'];
 $ProductDate=$_POST['ProductDate'];
@@ -52,8 +50,8 @@ $Special=$_POST['Special'];
 $Latest=$_POST['Latest'];
 $Views=$_POST['Views'];
 
-$sql = "insert into products (id,Name,UnitBrief,UnitPrice,Image,ProductDate,Available,Description,SupplierId,Quantity,Discount,Special,Latest,Views)
-values(NULL,'$Name','$UnitBrief','$UnitPrice','$Image','$ProductDate','$Available','$Description','$SupplierId','$Quantity','$Discount','$Special','$Latest','$Views')";
+$sql = "insert into products (id,Name,UnitPrice,Image,ProductDate,Available,Description,SupplierId,Quantity,Discount,Special,Latest,Views)
+values(NULL,'$Name','$UnitPrice','$Image','$ProductDate','$Available','$Description','$SupplierId','$Quantity','$Discount','$Special','$Latest','$Views')";
 
 if ($conn->query($sql) == TRUE) {
     echo "<script type='text/javascript'>alert('Bạn đã thêm thành công');</script>";

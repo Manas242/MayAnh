@@ -42,8 +42,7 @@ if(mysqli_num_rows($tv_1)>0)
 }
 echo "<tr>";
 echo "<td colspan='3' align='center' >";
-echo "<div class='col-md-3' style='float:none'>";
-echo "<div class='phan_trang' >";
+echo "<div class='phan_trang' style='width:100%;float:left;'>";
 for($i=1;$i<=$so_trang;$i++)
 {
     if ($i == $current_page){

@@ -6,7 +6,6 @@ echo "<a href='$link'>Create</a>";
 <tr>
 <td>ID</td>
 <td>Name</td>
-<td>UnitBrief</td>
 <td>UnitPrice</td>
 <td>Image</td>
 <td>ProductDate</td>
@@ -27,7 +26,6 @@ while($row=mysqli_fetch_array($query)){
 <tr>
 <td><?php echo $row['id']; ?></td>
 <td><?php echo $row['Name']; ?></td>
-<td><?php echo $row['UnitBrief']; ?></td>
 <td><?php echo $row['UnitPrice']; ?></td>
 <td><?php echo $row['Image']; ?></td>
 <td><?php echo $row['ProductDate']; ?></td>

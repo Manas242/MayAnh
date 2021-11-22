@@ -15,7 +15,6 @@ $sql=mysqli_query($conn,"select * from suppliers");
 <form method="POST" class="form" id="fromid">
 <h2>Sản phẩm</h2>
 <label>Username: <input type="text" value="<?php echo $row['Name']; ?>" name="Name"></label><br/>
-<label>UnitBrief: <input type="text" value="<?php echo $row['UnitBrief']; ?>" name="UnitBrief"></label><br/>
 <label>UnitPrice: <input type="text" value="<?php echo $row['UnitPrice']; ?>" name="UnitPrice"></label><br/>
 <label>Image: <input type="text" value="<?php echo $row['Image']; ?>" name="Image"></label><br/>
 <label>ProductDate: <input type="date" value="<?php echo $row['ProductDate']; ?>" name="ProductDate"></label><br/>
@@ -41,7 +40,6 @@ echo "</select>";
 if (isset($_POST['update'])){
 $id=$_GET['id'];
 $Name=$_POST['Name'];
-$UnitBrief=$_POST['UnitBrief'];
 $UnitPrice=$_POST['UnitPrice'];
 $Image=$_POST['Image'];
 $ProductDate=$_POST['ProductDate'];
@@ -54,7 +52,7 @@ $Special=$_POST['Special'];
 $Latest=$_POST['Latest'];
 $Views=$_POST['Views'];
 
-$sql = "UPDATE products SET Name='$Name',UnitPrice='$UnitPrice',Image='$Image',UnitBrief='$UnitBrief',ProductDate='$ProductDate',Available='$Available',Description='$Description',SupplierId='$SupplierId',Discount='$Discount',Special='$Special',Latest='$Latest',Quantity='$Quantity',Views='$Views' WHERE id='$id'";
+$sql = "UPDATE products SET Name='$Name',UnitPrice='$UnitPrice',Image='$Image',ProductDate='$ProductDate',Available='$Available',Description='$Description',SupplierId='$SupplierId',Discount='$Discount',Special='$Special',Latest='$Latest',Quantity='$Quantity',Views='$Views' WHERE id='$id'";
 
 if ($conn->query($sql) == TRUE) {
     echo "<script type='text/javascript'>alert('Bạn đã sửa thành công');</script>";
